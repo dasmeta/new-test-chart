@@ -2,7 +2,8 @@ name: Zip Files
 
 on:
   push:
-    types: [published]
+    branches: 
+      - main
 
 jobs:
   zip-files:
