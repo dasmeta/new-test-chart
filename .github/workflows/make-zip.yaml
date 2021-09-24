@@ -14,3 +14,7 @@ jobs:
         with:
           files: helm
           dest: new-test-chart.zip
+      - uses: actions/upload-artifact@v1
+        with:
+          name: my-artifact
+          path: ${{ github.workspace }}/new-test-chart.zip
